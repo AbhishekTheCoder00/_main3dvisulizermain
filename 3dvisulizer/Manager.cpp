@@ -35,12 +35,12 @@ void Manager::handleUserInput() {
         }
 
         case 2: {  // Line
-            double x1, y1, x2, y2;
-            std::cout << "Enter line's start point (x1, y1) and end point (x2, y2): ";
-            std::cin >> x1 >> y1 >> x2 >> y2;
-            Line ln(Point(x1, y1), Point(x2, y2));
-            ln.writeToFile(writer.getStream());
-            break;
+           double x1, y1, x2, y2;
+           std::cout << "Enter line's start point (x1, y1) and end point (x2, y2): ";
+           std::cin >> x1 >> y1 >> x2 >> y2;
+           Line ln(x1, y1, x2, y2);
+           ln.writeToFile(writer.getStream());
+           break;
         }
 
         case 3: {  // Triangle
