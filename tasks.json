@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\MinGW\\bin\\g++.exe",
+			"args": [
+				"-std=c++17",
+				"-fdiagnostics-color=always",
+				"-g",
+				"-I", "D:\\3dvisulizer\\include",
+				"D:\\3dvisulizer\\circle.cpp",
+				"D:\\3dvisulizer\\filewriter.cpp",
+				"D:\\3dvisulizer\\main.cpp",
+				"D:\\3dvisulizer\\rectangle.cpp",
+				"D:\\3dvisulizer\\square.cpp",
+				"D:\\3dvisulizer\\triangle.cpp",
+				"D:\\3dvisulizer\\Line.cpp",
+				"D:\\3dvisulizer\\Manager.cpp",
+				"D:\\3dvisulizer\\Point.cpp",
+				"D:\\3dvisulizer\\Polygon.cpp",
+				"-o",
+				"D:\\3dvisulizer\\output2.exe"
+			],
+			"options": {
+				"cwd": "C:\\MinGW\\bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\MinGW\\bin\\g++.exe"
+		}
+	]
+}
