@@ -1,11 +1,18 @@
-#pragma once
+#ifndef LINE_H
+#define LINE_H
+
 #include <fstream>
-#include "Point.h"
 
 class Line {
 public:
-    Line(const Point& start, const Point& end);  // Constructor for start and end points
-    void writeToFile(std::ofstream& file) const;  // Write line to file
+    Line(double x1, double y1, double x2, double y2);
+    void writeToFile(std::ofstream& file) const;
+
 private:
-    Point start, end;  // Start and end points of the line
+    double x1;  
+    double y1;  
+    double x2;  
+    double y2;  
 };
+
+#endif 
